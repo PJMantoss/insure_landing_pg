@@ -1,0 +1,54 @@
+/* Base Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+header > #logo {
+    display: flex;
+    align-self: center;
+    width: 30vw;
+    margin-left: 24px;
+}
+
+header > .menu {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 40vw;
+   text-transform: uppercase; 
+   font-size: 14px;
+   font-family: 'Karla', sans-serif;
+   font-weight: 600;
+   color: hsl(273, 4%, 51%);
+}
+
+.menu > li {
+    list-style: none;
+    padding: 5px 20px;
+}
+
+.menu > #view {
+    border: 2px solid hsl(270, 9%, 17%);
+    border-radius: 2px;
+    color: hsl(270, 9%, 17%);
+    font-size: 14px;
+}

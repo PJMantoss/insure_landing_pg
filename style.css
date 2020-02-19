@@ -68,17 +68,12 @@ header > .menu {
 
 }
 
-.main-intro {
-    z-index: 0;
-    margin: 0 0 160px 0;
-}
-
 .intro {
     background-color: hsl(256, 26%, 20%);
     height: 82vh;
     position: relative;
     z-index: -1;
-    
+    margin-bottom: 200px;
 }
 
 .intro .intro-info {
@@ -154,6 +149,7 @@ header > .menu {
     height: 98%;
 }
 
-.info {
-    position: relative;
+.info-main {
+    margin: 500px auto 0 auto;
+    width: 80%;
 }

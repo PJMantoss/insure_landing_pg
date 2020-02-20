@@ -213,6 +213,7 @@ header > .menu {
 .last-div .last {
     display: flex;
     align-items: center;
+    z-index: 1;
 }
 
 .last > h2 {
@@ -235,4 +236,11 @@ header > .menu {
     height: 35px;
     width: 20%;
     text-transform: uppercase;
+}
+
+.last > #bg-pattern-how-we-work-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 2;
 }

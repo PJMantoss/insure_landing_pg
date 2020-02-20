@@ -160,6 +160,7 @@ header > .menu {
 .info-main > hr {
     width: 12%;
     margin-bottom: 35px;
+    margin-left: 22px;
 }
 
 .info-main > h2 {
@@ -168,6 +169,7 @@ header > .menu {
     font-weight: 400;
     font-size: 60px;
     margin-bottom: 50px;
+    padding-left: 20px;
 }
 
 .info-main > .info {

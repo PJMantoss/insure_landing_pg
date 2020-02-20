@@ -185,3 +185,10 @@ header > .menu {
 .item > img {
     margin-bottom: 40px;
 }
+
+.item > h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 25px;
+}

@@ -65,7 +65,6 @@ header > .menu {
 
 .pg-wrapper {
     z-index: 1;
-
 }
 
 .intro {
@@ -193,13 +192,35 @@ header > .menu {
     margin-bottom: 25px;
 }
 
+.item > p {
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.7em;
+}
+
 .last-div {
     display: flex;
-    justify-content: center;
     background-color: hsl(256, 26%, 20%);
     height: 25vh;
     position: relative;
     z-index: -1;
     margin: 100px auto 50px auto;
     width: 80%;
+}
+
+.last-div .last {
+    display: flex;
+    align-items: center;
+}
+
+.last > h2 {
+    color: white;
+    width: 70%;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 20px 50px 20px 30px;
+    line-height: 0.9em;
 }

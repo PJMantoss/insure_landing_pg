@@ -217,10 +217,12 @@ header > .menu {
 
 .last > h2 {
     color: white;
-    width: 70%;
+    width: 60vw;
     font-family: 'DM Serif Display', serif;
     font-weight: 400;
     font-size: 40px;
-    padding: 20px 50px 20px 30px;
+    padding: 20px 50px;
     line-height: 0.9em;
 }
+
+.last > button {}

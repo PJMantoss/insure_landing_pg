@@ -179,3 +179,7 @@ header > .menu {
     width: calc(100% / 3);
     margin: 20px;
 }
+
+.item > img {
+    margin-bottom: 40px;
+}

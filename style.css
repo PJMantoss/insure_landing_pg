@@ -261,7 +261,7 @@ footer > .footer-head {
     display: flex;
     align-items: center;
     width: 80%;
-    margin: 80px auto 10px auto;
+    margin: 80px auto 0 auto;
     padding-top: 10px;
     z-index: 1;
 }
@@ -269,7 +269,7 @@ footer > .footer-head {
 .footer-head > img {
     display: flex;
     align-self: center;
-    margin: 50px 0 30px 0;
+    margin: 50px 0 20px 0;
     width: 10%;
 }
 
@@ -279,7 +279,7 @@ footer > .footer-head {
     top: 50px;
     right: 130px;
     position: absolute;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .social-media > a {

@@ -270,3 +270,12 @@ footer > .footer-head {
     align-self: center;
     margin: 50px 24px 30px 0;
 }
+
+.footer-head .social-media {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    top: 50px;
+    right: 24px;
+    position: absolute;
+}

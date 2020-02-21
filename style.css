@@ -261,21 +261,35 @@ footer > .footer-head {
     display: flex;
     align-items: center;
     width: 80%;
-    margin: 50px auto 20px auto;
+    margin: auto;
     z-index: 1;
 }
 
 .footer-head > img {
     display: flex;
     align-self: center;
-    margin: 50px 24px 30px 0;
+    margin: 50px 0 30px 0;
+    width: 10%;
 }
 
 .footer-head .social-media {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     top: 50px;
-    right: 24px;
+    right: 130px;
     position: absolute;
+    margin-bottom: 30px;
+}
+
+.social-media > a {
+    padding: 5px;
+}
+
+.social-media > a > i {
+    color: hsl(273, 4%, 51%);
+}
+
+footer > hr {
+    width: 80%;
+    margin: auto;
 }

@@ -249,3 +249,10 @@ header > .menu {
     right: 0;
     z-index: 3;
 }
+
+footer {
+    width: 100%;
+    background-color: hsl(0, 0%, 98%);
+    z-index: -1;
+    position: relative;
+}

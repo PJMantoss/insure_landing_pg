@@ -261,7 +261,8 @@ footer > .footer-head {
     display: flex;
     align-items: center;
     width: 80%;
-    margin: auto;
+    margin: 80px auto 10px auto;
+    padding-top: 10px;
     z-index: 1;
 }
 
@@ -291,5 +292,18 @@ footer > .footer-head {
 
 footer > hr {
     width: 80%;
+    margin: 0 auto 50px auto;
+}
+
+.footer-main {
+    display: flex;
+    align-items: center;
+    width: 80%;
     margin: auto;
+    z-index: 1;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
 }

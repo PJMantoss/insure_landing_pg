@@ -306,7 +306,7 @@ footer > hr {
     display: flex;
     align-items: center;
     width: 80%;
-    margin: auto;
+    margin: 5px auto 50px auto;
     z-index: 0;
     position: absolute;
     top: 200px;
@@ -327,4 +327,13 @@ footer > hr {
 .footer .pattern-div {
     position: absolute;
     z-index: 3;
+}
+
+.attribution {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    align-items: flex-end;
+    right: 250px;
+    top: 150px;
 }

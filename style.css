@@ -255,6 +255,7 @@ footer {
     background-color: hsl(0, 0%, 98%);
     z-index: -1;
     position: relative;
+    height: 60%;
 }
 
 footer > .footer-head {
@@ -273,7 +274,7 @@ footer > .footer-head {
     display: flex;
     align-self: center;
     margin: 50px 0 20px 0;
-    width: 7%;
+    width: 11%;
 }
 
 .footer-head .social-media {
@@ -298,7 +299,7 @@ footer > hr {
     margin: 0 auto 50px auto;
     z-index: 0;
     position: absolute;
-    top: 100px;
+    top: 122px;
     left: 150px;
 }
 
@@ -309,7 +310,7 @@ footer > hr {
     margin: 5px auto 50px auto;
     z-index: 0;
     position: absolute;
-    top: 200px;
+    top: 160px;
     left: 150px;
 }
 
@@ -319,17 +320,26 @@ footer > hr {
     width: calc(100% / 4);
 }
 
+.footer-info .info-links {
+    display: flex;
+    flex-direction: column;
+}
+
 .footer-info .info-links > a {
     text-decoration: none;
     text-transform: uppercase;
     padding: 5px 0 5px 0;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: hsl(270, 9%, 17%);
 }
 
 .footer-info > h3 {
     font-family: 'Karla', sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    color: hsl(216, 30%, 68%);
+    font-weight: 600;
+    font-size: 14px;
+    color: hsl(273, 4%, 51%);
     text-transform: uppercase;
     margin-bottom: 25px;
 }

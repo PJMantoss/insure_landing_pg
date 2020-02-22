@@ -356,4 +356,12 @@ footer > hr {
     align-items: flex-end;
     right: 250px;
     top: 150px;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.attribution > a {
+    text-decoration: none;
+    color: black;
 }

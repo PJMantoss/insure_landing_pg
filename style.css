@@ -1,3 +1,255 @@
+/* Base Resets */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*
+font-family: 'Karla', sans-serif;
+font-family: 'DM Serif Display', serif; 
+ */
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: white;
+}
+
+
+header {
+    display: flex;
+    background: white;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 0;
+    margin-bottom: 0;
+    width: 100%;
+    z-index: 3;
+}
+
+header > #logo {
+    display: flex;
+    align-self: center;
+    width: 30vw;
+    margin-left: 24px;
+}
+
+header > .menu {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+   width: 40vw;
+   text-transform: uppercase; 
+   font-size: 14px;
+   font-family: 'Karla', sans-serif;
+   font-weight: 600;
+   color: hsl(273, 4%, 51%);
+}
+
+.menu > li {
+    list-style: none;
+    padding: 5px 20px;
+}
+
+.menu > #view {
+    border: 2px solid hsl(270, 9%, 17%);
+    border-radius: 2px;
+    color: hsl(270, 9%, 17%);
+    font-size: 14px;
+}
+
+.pg-wrapper {
+    z-index: 1;
+}
+
+.intro {
+    background-color: hsl(256, 26%, 20%);
+    height: 82vh;
+    position: relative;
+    z-index: -1;
+    margin-bottom: 200px;
+}
+
+.intro .intro-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 50%;
+    padding-top: 90px;
+    padding-left: 50px;
+    padding-right: 20px;
+    margin-left: 100px;
+    margin-right: 10px;
+}
+
+.intro-info > hr {
+    width: 20%;
+    margin-bottom: 50px;
+}
+
+.intro-info > h1 {
+    color: white;
+    width: 80%;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 0.7em;
+}
+
+.intro-info > p {
+    color: hsl(0, 0%, 98%);
+    font-family: 'Karla', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+.intro-info > button {
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: inherit;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    height: 35px;
+    width: 20%;
+    text-transform: uppercase;
+}
+
+#image-intro-desktop {
+    position: absolute;
+    top: 90px;
+    right: 145px;
+    z-index: 1;
+    width: 490px;
+    max-width: 100%;
+    height: auto;
+    padding-left: 10px;
+}
+
+#pattern-intro-left-desktop {
+    position: absolute;
+    top: 370px;
+    left: 0;
+    z-index: 2;
+}
+
+#pattern-intro-right-desktop {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    z-index: 2;
+    height: 98%;
+}
+
+.info-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 300px auto 0 auto;
+    width: 80%;
+}
+
+.info-main > hr {
+    width: 12%;
+    margin-bottom: 35px;
+    margin-left: 22px;
+}
+
+.info-main > h2 {
+    width: 90%;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 60px;
+    margin-bottom: 50px;
+    padding-left: 20px;
+}
+
+.info-main > .info {
+    display: flex;
+    margin: 20px 0 50px 0;
+}
+
+.item {
+    width: calc(100% / 3);
+    margin: 20px;
+}
+
+.item > img {
+    margin-bottom: 40px;
+}
+
+.item > h3 {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+
+.item > p {
+    color: hsl(273, 4%, 51%);
+    font-family: 'Karla', sans-serif;
+    font-size: 15px;
+    width: 100%;
+    line-height: 1.7em;
+}
+
+.last-div {
+    display: flex;
+    background-color: hsl(256, 26%, 20%);
+    height: 30vh;
+    position: relative;
+    z-index: -1;
+    margin: 100px auto 50px auto;
+    width: 80%;
+}
+
+.last-div .last {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.last > h2 {
+    color: white;
+    width: 40vw;
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-size: 40px;
+    padding: 20px 50px;
+    line-height: 0.9em;
+    z-index: 2;
+}
+
+.last > button {
+    border: 2px solid white;
+    border-radius: 2px;
+    background-color: inherit;
+    color: white;
+    font-family: 'Karla', sans-serif;
+    font-size: 14px;
+    height: 35px;
+    width: 14%;
+    text-transform: uppercase;
+    z-index: 2;
+    position: absolute;
+    right: 80px;
+}
+
+.last > #bg-pattern-how-we-work-desktop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+}
+
 footer {
     width: 100%;
     background-color: hsl(0, 0%, 98%);

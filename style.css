@@ -261,16 +261,19 @@ footer > .footer-head {
     display: flex;
     align-items: center;
     width: 80%;
-    margin: 80px auto 0 auto;
+    margin: auto;
     padding-top: 10px;
     z-index: 0;
+    position: absolute;
+    top: 10px;
+    left: 150px;
 }
 
 .footer-head > img {
     display: flex;
     align-self: center;
     margin: 50px 0 20px 0;
-    width: 10%;
+    width: 7%;
 }
 
 .footer-head .social-media {
@@ -291,9 +294,12 @@ footer > .footer-head {
 }
 
 footer > hr {
-    width: 80%;
+    width: 70%;
     margin: 0 auto 50px auto;
     z-index: 0;
+    position: absolute;
+    top: 100px;
+    left: 150px;
 }
 
 .footer-main {
@@ -302,6 +308,9 @@ footer > hr {
     width: 80%;
     margin: auto;
     z-index: 0;
+    position: absolute;
+    top: 200px;
+    left: 150px;
 }
 
 .footer-main .footer-info {
@@ -316,8 +325,6 @@ footer > hr {
 }
 
 .footer .pattern-div {
-    top: 0;
-    left: 0;
     position: absolute;
     z-index: 3;
 }

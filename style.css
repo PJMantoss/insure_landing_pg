@@ -142,6 +142,10 @@ header > .menu-icon {
         min-height: 240px;
         z-index: 2;
     }
+    
+    header #menu-btn:checked ~ .menu > li {
+        font-size: 400;
+    }
 }
 
 .pg-wrapper {

@@ -66,14 +66,16 @@ li > a:hover {
     color: hsl(270, 9%, 17%);
 }
 
-.menu > #view {
-    border: 2px solid hsl(270, 9%, 17%);
-    border-radius: 2px;
-    font-size: 14px;
-}
-
 #view > a {
     color: hsl(270, 9%, 17%);
+}
+
+.menu > #view:hover {
+    background-color: hsl(270, 9%, 17%);
+}
+
+#view > a:hover {
+    color: white;
 }
 
 .pg-wrapper {

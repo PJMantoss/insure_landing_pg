@@ -99,6 +99,15 @@ header > .menu-icon {
         padding: 28px 5px 28px 35px;
         cursor: pointer;
     }
+    
+    header .menu-icon .nav-icon {
+        position: relative;
+        display: block;
+        background: #333;
+        transition: background .2s ease-out;
+        height: 2px;
+        width: 18px;
+    }
 }
 
 .pg-wrapper {

@@ -127,6 +127,15 @@ header > .menu-icon {
     header .menu-icon .nav-icon:after {
         top: -5px;
     }
+    
+    header #menu-btn:checked ~ .menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        position: absolute;
+        top: 50px;
+    }
 }
 
 .pg-wrapper {

@@ -78,6 +78,29 @@ li > a:hover {
     color: white;
 }
 
+header > #menu-btn {
+    display: none;
+}
+
+header > .menu-icon {
+    display: none;
+}
+
+@media (max-width: 770px){
+    header > .menu {
+        display: none;
+    }
+
+    header > .menu-icon {
+        position: relative;
+        display: inline-block;
+        user-select: none;
+        float: right;
+        padding: 28px 5px 28px 35px;
+        cursor: pointer;
+    }
+}
+
 .pg-wrapper {
     z-index: 1;
 }

@@ -64,7 +64,6 @@ header > .menu {
    font-size: 14px;
    font-family: 'Karla', sans-serif;
    font-weight: 600;
-   color: hsl(273, 4%, 51%);
 }
 
 .menu > li {
@@ -79,6 +78,12 @@ li > a {
 
 li > a:hover {
     color: hsl(270, 9%, 17%);
+}
+
+.menu > #view {
+    border: 2px solid hsl(270, 9%, 17%);
+    border-radius: 2px;
+    font-size: 14px;
 }
 
 #view > a {
@@ -114,7 +119,7 @@ header > .menu-icon {
         padding: 28px 5px 28px 35px;
         cursor: pointer;
     }
-    
+
     header .menu-icon .nav-icon {
         position: relative;
         display: block;
@@ -123,7 +128,7 @@ header > .menu-icon {
         height: 2px;
         width: 18px;
     }
-    
+
     header .menu-icon .nav-icon:before,
     header .menu-icon .nav-icon:after{
         width: 100%;
@@ -134,7 +139,7 @@ header > .menu-icon {
         content: "";
         transition: all .2s ease-out;
     }
-    
+
     header .menu-icon .nav-icon:before {
         top: 5px;
     }
@@ -142,7 +147,7 @@ header > .menu-icon {
     header .menu-icon .nav-icon:after {
         top: -5px;
     }
-    
+
     header #menu-btn:checked ~ .menu{
         display: flex;
         flex-direction: column;
@@ -170,10 +175,36 @@ header > .menu-icon {
     header #menu-btn:checked ~ .menu-icon .nav-icon:after{
         transform: rotate(45deg);
     }
-    
+
     header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
     header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after{
         top: 0;
+    }
+
+    header > .menu {
+        clear: none;
+        float: right;
+        height: auto;
+        right: 200px;
+    }
+
+    header > li {
+        float: right;
+    }
+
+    li > a {
+        color: white;
+        font-size: 20px;
+    }
+
+    .menu > #view{
+        border: 2px solid white;
+        width: 100%;
+    }
+
+    #view > a {
+        color: white;
+    }
 }
 
 .pg-wrapper {

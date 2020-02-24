@@ -136,15 +136,24 @@ header > .menu-icon {
         position: absolute;
         top: 50px;
         left: 180px;
+        background: transparent;
         border: 1px thin white;
         border-radius: 4px;
         min-width: 240px;
         min-height: 240px;
         z-index: 2;
     }
-    
-    header #menu-btn:checked ~ .menu > li {
-        font-size: 400;
+
+    header #menu-btn:checked ~ .menu-icon .nav-icon {
+        background: transparent;
+    }
+
+    header #menu-btn:checked ~ .menu-icon .nav-icon:before{
+        transform: rotate(-45deg);
+    }
+
+    header #menu-btn:checked ~ .menu-icon .nav-icon:after{
+        transform: rotate(45deg);
     }
 }
 

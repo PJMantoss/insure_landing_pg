@@ -155,6 +155,10 @@ header > .menu-icon {
     header #menu-btn:checked ~ .menu-icon .nav-icon:after{
         transform: rotate(45deg);
     }
+    
+    header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
+    header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after{
+        top: 0;
 }
 
 .pg-wrapper {

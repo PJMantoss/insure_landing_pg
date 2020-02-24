@@ -40,6 +40,21 @@ header > #logo {
     margin-left: 24px;
 }
 
+@media (max-width: 770px){
+    header {
+        padding: 0;
+        margin: 0;
+    }
+
+    header > #logo {
+        width: 50vw;
+        left: 0;
+        margin-left: 0;
+        margin-right: 10px;
+        padding-right: 15px;
+    }
+}
+
 header > .menu {
    display: flex;
    flex-wrap: wrap;

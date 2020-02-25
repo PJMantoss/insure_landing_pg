@@ -303,6 +303,49 @@ header > .menu-icon {
     display: none;
 }
 
+@media (max-width: 770px){
+    .intro {
+        height: 200vh;
+        margin: 0;
+    }
+
+    .intro .intro-info {
+        justify-content: center;
+        align-content: center;
+        width: 50%;
+        position: absolute;
+        top: 400px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .intro-info > hr {
+        display: none;
+    }
+
+    #image-intro-desktop {
+        display: none;
+    }
+
+    #image-intro-mobile {
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 60px;
+        align-self: center;
+    }
+
+    #pattern-intro-left-desktop {
+        display: none;
+    }
+
+    #pattern-intro-right-desktop {
+        display: none;
+    }
+}
+
 .info-main {
     display: flex;
     flex-direction: column;
@@ -402,6 +445,12 @@ header > .menu-icon {
     top: 0;
     right: 0;
     z-index: 3;
+}
+
+@media (max-width: 770px){
+    #bg-pattern-how-we-work-desktop {
+        display: none;
+    }
 }
 
 footer {
@@ -518,4 +567,10 @@ footer > hr {
 .attribution > a {
     text-decoration: none;
     color: black;
+}
+
+@media (max-width: 770px){
+    .pattern-div {
+        display: none;
+    }
 }

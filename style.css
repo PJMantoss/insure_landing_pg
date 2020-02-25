@@ -199,7 +199,6 @@ header > .menu-icon {
 
     .menu > #view{
         border: 2px solid white;
-        width: 100%;
     }
 
     #view > a {
@@ -277,11 +276,19 @@ header > .menu-icon {
     padding-left: 10px;
 }
 
+#image-intro-mobile {
+    display: none;
+}
+
 #pattern-intro-left-desktop {
     position: absolute;
     top: 370px;
     left: 0;
     z-index: 2;
+}
+
+#pattern-intro-left-mobile {
+    display: none;
 }
 
 #pattern-intro-right-desktop {
@@ -290,6 +297,10 @@ header > .menu-icon {
     right: 0;
     z-index: 2;
     height: 98%;
+}
+
+#pattern-intro-right-mobile{
+    display: none;
 }
 
 .info-main {

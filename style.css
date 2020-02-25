@@ -307,12 +307,13 @@ header > .menu-icon {
     .intro {
         height: 200vh;
         margin: 0;
+        width: 100%;
     }
 
     .intro .intro-info {
         justify-content: center;
         align-content: center;
-        width: 50%;
+        width: 100%;
         position: absolute;
         top: 400px;
         padding-left: 10px;
@@ -323,6 +324,21 @@ header > .menu-icon {
 
     .intro-info > hr {
         display: none;
+    }
+
+    .intro-info > h1 {
+        width: 100%;
+        font-size: 52px;
+        text-align: center;
+        line-height: 0.7em;
+    }
+
+    .intro-info > p {
+        font-size: 15px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        width: 100%;
+        text-align: center;
     }
 
     #image-intro-desktop {

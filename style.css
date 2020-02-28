@@ -305,7 +305,7 @@ header > .menu-icon {
 
 @media (max-width: 770px){
     .intro {
-        height: 200vh;
+        height: 154vh;
         margin: 0;
         width: 100%;
     }
@@ -356,22 +356,31 @@ header > .menu-icon {
         top: 0;
         left: 60px;
         align-self: center;
+        z-index: 2;
     }
 
     #pattern-intro-left-desktop {
         display: none;
     }
-    
+
     #pattern-intro-left-mobile{
         display: block;
         position: absolute;
         z-index: 1;
         top: 450px;
-        left: 40px;
+        left: 0;
     }
 
     #pattern-intro-right-desktop {
         display: none;
+    }
+
+    #pattern-intro-right-mobile {
+        display: block;
+        position: absolute;
+        z-index: 1;
+        right: 0;
+        top: 800px;
     }
 }
 

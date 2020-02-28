@@ -1,750 +1,154 @@
-/* Base Resets */
-
-* {
-    margin: 0;
-    padding: 0;
-}
-
-/*
-font-family: 'Karla', sans-serif;
-font-family: 'DM Serif Display', serif; 
- */
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    box-sizing: border-box;
-    background-color: white;
-}
-
-
-header {
-    display: flex;
-    background: white;
-    position: relative;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px 0;
-    margin-bottom: 0;
-    width: 100%;
-    z-index: 3;
-}
-
-header > #logo {
-    display: flex;
-    align-self: center;
-    width: 30vw;
-    margin-left: 24px;
-}
-
-@media (max-width: 770px){
-    header {
-        padding: 0;
-        margin: 0;
-    }
-
-    header > #logo {
-        width: 50vw;
-        left: 0;
-        margin-left: 0;
-        margin-right: 10px;
-        padding-right: 15px;
-    }
-}
-
-header > .menu {
-   display: flex;
-   flex-wrap: wrap;
-   align-items: center;
-   width: 40vw;
-   text-transform: uppercase; 
-   font-size: 14px;
-   font-family: 'Karla', sans-serif;
-   font-weight: 600;
-}
-
-.menu > li {
-    list-style: none;
-    padding: 5px 20px;
-}
-
-li > a {
-    text-decoration: none;
-    color: hsl(273, 4%, 51%);
-}
-
-li > a:hover {
-    color: hsl(270, 9%, 17%);
-}
-
-.menu > #view {
-    border: 2px solid hsl(270, 9%, 17%);
-    border-radius: 2px;
-    font-size: 14px;
-}
-
-#view > a {
-    color: hsl(270, 9%, 17%);
-}
-
-.menu > #view:hover {
-    background-color: hsl(270, 9%, 17%);
-}
-
-#view > a:hover {
-    color: white;
-}
-
-header > #menu-btn {
-    display: none;
-}
-
-header > .menu-icon {
-    display: none;
-}
-
-@media (max-width: 770px){
-    header > .menu {
-        display: none;
-    }
-
-    header > .menu-icon {
-        position: relative;
-        display: inline-block;
-        user-select: none;
-        float: right;
-        padding: 28px 5px 28px 35px;
-        cursor: pointer;
-    }
-
-    header .menu-icon .nav-icon {
-        position: relative;
-        display: block;
-        background: #333;
-        transition: background .2s ease-out;
-        height: 2px;
-        width: 18px;
-    }
-
-    header .menu-icon .nav-icon:before,
-    header .menu-icon .nav-icon:after{
-        width: 100%;
-        height: 100%;
-        display: block;
-        background: #333;
-        position: absolute;
-        content: "";
-        transition: all .2s ease-out;
-    }
-
-    header .menu-icon .nav-icon:before {
-        top: 5px;
-    }
-
-    header .menu-icon .nav-icon:after {
-        top: -5px;
-    }
-
-    header #menu-btn:checked ~ .menu{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        align-items: center;
-        position: absolute;
-        top: 50px;
-        left: 180px;
-        background: transparent;
-        border: 1px thin white;
-        border-radius: 4px;
-        min-width: 240px;
-        min-height: 240px;
-        z-index: 2;
-    }
-
-    header #menu-btn:checked ~ .menu-icon .nav-icon {
-        background: transparent;
-    }
-
-    header #menu-btn:checked ~ .menu-icon .nav-icon:before{
-        transform: rotate(-45deg);
-    }
-
-    header #menu-btn:checked ~ .menu-icon .nav-icon:after{
-        transform: rotate(45deg);
-    }
-
-    header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:before,
-    header #menu-btn:checked ~ .menu-icon:not(.steps) .nav-icon:after{
-        top: 0;
-    }
-
-    header > .menu {
-        clear: none;
-        float: right;
-        height: auto;
-        right: 200px;
-    }
-
-    header > li {
-        float: right;
-    }
-
-    li > a {
-        color: white;
-        font-size: 20px;
-    }
-
-    .menu > #view{
-        border: 2px solid white;
-    }
-
-    #view > a {
-        color: white;
-    }
-}
-
-.pg-wrapper {
-    z-index: 1;
-}
-
-.intro {
-    background-color: hsl(256, 26%, 20%);
-    height: 82vh;
-    position: relative;
-    z-index: -1;
-    margin-bottom: 200px;
-}
-
-.intro .intro-info {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 50%;
-    padding-top: 90px;
-    padding-left: 50px;
-    padding-right: 20px;
-    margin-left: 100px;
-    margin-right: 10px;
-}
-
-.intro-info > hr {
-    width: 20%;
-    margin-bottom: 50px;
-}
-
-.intro-info > h1 {
-    color: white;
-    width: 80%;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 60px;
-    line-height: 0.7em;
-}
-
-.intro-info > p {
-    color: hsl(0, 0%, 98%);
-    font-family: 'Karla', sans-serif;
-    font-size: 16px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    width: 80%;
-}
-
-.intro-info > button {
-    border: 2px solid white;
-    border-radius: 2px;
-    background-color: inherit;
-    color: white;
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    height: 35px;
-    width: 20%;
-    text-transform: uppercase;
-}
-
-#image-intro-desktop {
-    position: absolute;
-    top: 90px;
-    right: 145px;
-    z-index: 1;
-    width: 490px;
-    max-width: 100%;
-    height: auto;
-    padding-left: 10px;
-}
-
-#image-intro-mobile {
-    display: none;
-}
-
-#pattern-intro-left-desktop {
-    position: absolute;
-    top: 370px;
-    left: 0;
-    z-index: 2;
-}
-
-#pattern-intro-left-mobile {
-    display: none;
-}
-
-#pattern-intro-right-desktop {
-    position: absolute;
-    top: -70px;
-    right: 0;
-    z-index: 2;
-    height: 98%;
-}
-
-#pattern-intro-right-mobile{
-    display: none;
-}
-
-@media (max-width: 770px){
-    .intro {
-        height: 152vh;
-        margin: 0;
-        width: 100%;
-    }
-
-    .intro .intro-info {
-        justify-content: center;
-        align-content: center;
-        width: 90%;
-        position: absolute;
-        top: 450px;
-        padding-left: 10px;
-        padding-right: 10px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
-
-    .intro-info > hr {
-        display: none;
-    }
-
-    .intro-info > h1 {
-        width: 100%;
-        font-size: 48px;
-        text-align: center;
-        line-height: 0.7em;
-    }
-
-    .intro-info > p {
-        margin-left: 50px;
-        width: 75%;
-        text-align: center;
-        line-height: 1.7em;
-    }
-
-    .intro-info > button {
-        font-size: 14px;
-        width: 40%;
-        margin-left: 120px;
-    }
-
-    #image-intro-desktop {
-        display: none;
-    }
-
-    #image-intro-mobile {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 60px;
-        align-self: center;
-        z-index: 2;
-    }
-
-    #pattern-intro-left-desktop {
-        display: none;
-    }
-
-    #pattern-intro-left-mobile{
-        display: block;
-        position: absolute;
-        z-index: 1;
-        top: 450px;
-        left: 0;
-    }
-
-    #pattern-intro-right-desktop {
-        display: none;
-    }
-
-    #pattern-intro-right-mobile {
-        display: block;
-        position: absolute;
-        z-index: 1;
-        right: 0;
-        top: 790px;
-    }
-}
-
-.info-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 300px auto 0 auto;
-    width: 80%;
-}
-
-@media (max-width: 770px){
-    .info-main {
-        width: 100%;
-        margin-top: 140px;
-    }
-}
-
-.info-main > hr {
-    width: 12%;
-    margin-bottom: 35px;
-    margin-left: 22px;
-}
-
-.info-main > h2 {
-    width: 90%;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 60px;
-    margin-bottom: 50px;
-    padding-left: 20px;
-}
-
-
-.info-main > .info {
-    display: flex;
-    margin: 20px 0 50px 0;
-}
-
-
-.item {
-    width: calc(100% / 3);
-    margin: 20px;
-}
-
-
-.item > img {
-    margin-bottom: 40px;
-}
-
-.item > h3 {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 25px;
-    margin-bottom: 25px;
-}
-
-.item > p {
-    color: hsl(273, 4%, 51%);
-    font-family: 'Karla', sans-serif;
-    font-size: 15px;
-    width: 100%;
-    line-height: 1.7em;
-}
-
-@media (max-width: 770px){
-    .info-main > hr {
-        width: 35%;
-        margin: auto auto 40px auto;
-    }
-
-    .info-main > h2 {
-        width: 90%;
-        font-size: 50px;
-        margin: auto;
-        padding-left: 80px;
-    }
-
-    .info-main > .info {
-        flex-direction: column;
-        margin: 70px auto 10px auto;
-        justify-content: center;
-        align-content: center;
-    }
-
-    .item {
-        width: 90%;
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .item > img {
+<!DOCTYPE html PUBLIC>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=DM+Serif+Display|Karla&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" href="./style.css" type="text/css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <title>Insure Landing Page</title>
+</head>
+<body>
+    <header>
+        <div id="logo"><img src="./images/logo.svg" alt="logo"></div>
+
+        <input type="checkbox" name="checkbox" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+
+        <ul class="menu">
+            <li><a href="#">How we work</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Account</a></li>
+            <li id="view"><a href="#">View plans</a></li>
+        </ul>
+    </header>
+
+    <div class="pg-wrapper">
         
-        align-self: center;
-    }
-
-    .item > h3, p {
-        align-self: center;
-        text-align: center;
-    }
-}
-
-.last-div {
-    display: flex;
-    background-color: hsl(256, 26%, 20%);
-    height: 30vh;
-    position: relative;
-    z-index: -1;
-    margin: 100px auto 50px auto;
-    width: 80%;
-}
-
-.last-div .last {
-    display: flex;
-    align-items: center;
-    z-index: 1;
-}
-
-.last > h2 {
-    color: white;
-    width: 40vw;
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-size: 40px;
-    padding: 20px 50px;
-    line-height: 0.9em;
-    z-index: 2;
-}
-
-.last > #mobile-h2{
-    display: none;
-}
-
-.last > button {
-    border: 2px solid white;
-    border-radius: 2px;
-    background-color: inherit;
-    color: white;
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    height: 35px;
-    width: 14%;
-    text-transform: uppercase;
-    z-index: 2;
-    position: absolute;
-    right: 80px;
-}
-
-.last > #bg-pattern-how-we-work-desktop {
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 3;
-}
-
-@media(max-width: 770px){
-    .last-div {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        height: 54vh;
-    }
-
-    .last-div .last {
-        flex-direction: column;
-        align-items: center;
-    }
-     .last > h2 {
-         display: none;
-     }
-
-    .last > #mobile-h2 {
-        display: block;
-        width: 80%;
-        font-size: 43px;
-        text-align: center;
-        top: 0;
-        z-index: 1;
-    }
-
-    .last > button {
-        width: 40%;
-        position: relative;
-        right: 5px;
-        margin: 20px 0;
-        z-index: 1;
-        height: 40x;
-    }
-
-    #bg-pattern-how-we-work-desktop {
-        display: none;
-    }
-
-    #bg-pattern-how-we-work-mobile {
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 2;
-    }
-}
-
-footer {
-    width: 100%;
-    background-color: hsl(0, 0%, 98%);
-    z-index: -1;
-    position: relative;
-    height: 60%;
-}
-
-footer > .footer-head {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: auto;
-    padding-top: 10px;
-    z-index: 0;
-    position: absolute;
-    top: 10px;
-    left: 150px;
-}
-
-.footer-head > img {
-    display: flex;
-    align-self: center;
-    margin: 50px 0 20px 0;
-    width: 11%;
-}
-
-
-.footer-head .social-media {
-    display: flex;
-    align-items: center;
-    top: 50px;
-    right: 130px;
-    position: absolute;
-    margin-bottom: 20px;
-}
-
-.social-media > a {
-    padding: 5px;
-}
-
-.social-media > a > i {
-    color: hsl(273, 4%, 51%);
-}
-
-footer > hr {
-    width: 70%;
-    margin: 0 auto 50px auto;
-    z-index: 0;
-    position: absolute;
-    top: 122px;
-    left: 150px;
-}
-
-.footer-main {
-    display: flex;
-    align-items: center;
-    width: 80%;
-    margin: 5px auto 50px auto;
-    z-index: 0;
-    position: absolute;
-    top: 160px;
-    left: 150px;
-}
-
-@media(max-width: 770px){
-    footer > .footer-head {
-        flex-direction: column;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        width: 100%;
-        left: 0;
-        margin: 0;
-    }
-
-    .footer-head > img {
-        display: block;
-        width: 20%;
-        margin: 40px 0 25px 0;
-    } 
+            <div class="intro">
+                <div class="intro-info">
+                    <hr>
+                    <h1>Humanizing</h1> <br> <h1>your insurance.</h1>
+                    <p>Get your life insurance coverage easier and faster. We blend our expertise 
+                        and technology to help you find the plan that’s right for you. Ensure you 
+                        and your loved ones are protected.</p>
+                    <button>View plans</button>
+                </div>
+                <img src="./images/image-intro-desktop.jpg" alt="image-intro-desktop" id="image-intro-desktop">
+                <img src="./images/image-intro-mobile.jpg" alt="image-intro-mobile" id="image-intro-mobile">
+                <img src="./images/bg-pattern-intro-left-desktop.svg" alt="bg-pattern-intro-left-desktop" id="pattern-intro-left-desktop">
+                <img src="./images/bg-pattern-intro-left-mobile.svg" alt="bg-pattern-intro-left-mobile" id="pattern-intro-left-mobile">
+                <img src="./images/bg-pattern-intro-right-desktop.svg" alt="bg-pattern-intro-right-desktop" id="pattern-intro-right-desktop">
+                <img src="./images/bg-pattern-intro-right-mobile.svg" alt="bg-pattern-intro-right-mobile" id="pattern-intro-right-mobile">
+            </div>
     
-    .footer-head .social-media {
-        align-items: center;
-        top: 0;
-        right: 5px;
-        position: relative;
-        margin-bottom: 20px;
-    }
+        
+    
+        <div class="info-main">
+            
+                <hr>
+                <h2>We’re different</h2>
+            
+    
+            <div class="info">
+                <div class="item">
+                    <img src="./images/icon-snappy-process.svg" alt="icon-snappy-process">
+                    <h3>Snappy Process</h3>
+                    <p>Our application process can be completed in minutes, not hours. Don’t get 
+                        stuck filling in tedious forms.</p>
+                </div>
+        
+                <div class="item">
+                    <img src="./images/icon-affordable-prices.svg" alt="icon-affordable-prices">
+                    <h3>Affordable Prices</h3>
+                    <p>We don’t want you worrying about high monthly costs. Our prices may be low, 
+                        but we still offer the best coverage possible.</p>
+                </div>
+        
+                <div class="item">
+                    <img src="./images/icon-people-first.svg" alt="icon-people-first">
+                    <h3>People First</h3>
+                    <p>Our plans aren’t full of conditions and clauses to prevent payouts. We make 
+                        sure you’re covered when you need it.</p>
+                </div>
+            </div>
+        </div>
+    
+        <div class="last-div">
+            <div class="last">
+                <h2>Find out more <br> about how we work</h2>
+                <h2 id="mobile-h2">Find out more about how we work</h2>
+                <button>How we work</button>
+            </div>
+            <img src="./images/bg-pattern-how-we-work-desktop.svg" alt="bg-pattern-how-we-work-desktop" id="bg-pattern-how-we-work-desktop">
+            <img src="./images/bg-pattern-how-we-work-mobile.svg" alt="bg-pattern-how-we-work-mobile" id="bg-pattern-how-we-work-mobile">
+        </div>
+    
+        <footer>
 
-    footer > hr {
-        width: 70%;
-        position: relative;
-        top: 150px;
-        left: 0;
-    }
+            <div class="footer-head">
+                <img src="./images/logo.svg" alt="logo">
+                <div class="social-media">
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <hr>
 
-    footer > #bg-pattern-footer-desktop {
-        display: none;
-    }
-}
+            <div class="footer-main">
+                <div class="footer-info">
+                    <h3>Our company</h3>
+                    <div class="info-links">
+                        <a href="#">How we work</a>
+                        <a href="#">Why Insure?</a>
+                        <a href="#">View plans</a>
+                        <a href="#">Reviews</a>
+                    </div>
+                </div>
 
-.footer-main .footer-info {
-    display: flex;
-    flex-direction: column;
-    width: calc(100% / 4);
-}
+                <div class="footer-info">
+                    <h3>Help me</h3>
+                    <div class="info-links">
+                        <a href="#">FAQ</a>
+                        <a href="#">Terms of use</a>
+                        <a href="#">Privacy policy</a>
+                        <a href="#">Cookies</a>
+                    </div>
+                </div>
+    
+                <div class="footer-info">
+                    <h3>Contact</h3>
+                    <div class="info-links">
+                        <a href="#">Sales</a>
+                        <a href="#">Support</a>
+                        <a href="#">Live chat</a>
+                    </div>
+                </div>
+    
+                <div class="footer-info">
+                    <h3>Others</h3>
+                    <div class="info-links">
+                        <a href="#">Careers</a>
+                        <a href="#">Press</a>
+                        <a href="#">Licenses</a>
+                    </div>
+                </div>
+            </div>
 
-.footer-info .info-links {
-    display: flex;
-    flex-direction: column;
-}
-
-.footer-info .info-links > a {
-    text-decoration: none;
-    text-transform: uppercase;
-    padding: 5px 0 5px 0;
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    color: hsl(270, 9%, 17%);
-}
-
-.footer-info > h3 {
-    font-family: 'Karla', sans-serif;
-    font-weight: 600;
-    font-size: 14px;
-    color: hsl(273, 4%, 51%);
-    text-transform: uppercase;
-    margin-bottom: 25px;
-}
-
-footer > #bg-pattern-footer-desktop {
-    position: absolute;
-    z-index: 3;
-}
-
-footer > #bg-pattern-footer-mobile{
-    display: none;
-}
-
-.attribution {
-    display: flex;
-    justify-content: flex-end;
-    position: relative;
-    align-items: flex-end;
-    right: 250px;
-    top: 150px;
-    font-family: 'Karla', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-}
-
-.attribution > a {
-    text-decoration: none;
-    color: black;
-}
-
-@media (max-width: 770px){
-    .pattern-div {
-        display: none;
-    }
-}
+            
+                <img src="./images/bg-pattern-footer-desktop.svg" alt="bg-pattern-footer-desktop" id="bg-pattern-footer-desktop">
+                <img src="./images/bg-pattern-footer-mobile.svg" alt="bg-pattern-footer-mobile" id="bg-pattern-footer-mobile">
+            
+            <!--
+            <div class="attribution">
+                Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+                Coded by <a href="https://github.com/PJMantoss" target="_blank"> <em>PJ Mantoss</em></a>.
+            </div>
+            -->
+        </footer>
+    </div>
+</body>
+</html>

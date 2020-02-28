@@ -512,6 +512,10 @@ header > .menu-icon {
     z-index: 2;
 }
 
+.last > #mobile-h2{
+    display: none;
+}
+
 .last > button {
     border: 2px solid white;
     border-radius: 2px;
@@ -534,9 +538,50 @@ header > .menu-icon {
     z-index: 3;
 }
 
-@media (max-width: 770px){
+@media(max-width: 770px){
+    .last-div {
+        flex-direction: column;
+        justify-content: center;
+        align-content: center;
+        height: 54vh;
+    }
+
+    .last-div .last {
+        flex-direction: column;
+        align-items: center;
+    }
+     .last > h2 {
+         display: none;
+     }
+
+    .last > #mobile-h2 {
+        display: block;
+        width: 80%;
+        font-size: 43px;
+        text-align: center;
+        top: 0;
+        z-index: 1;
+    }
+
+    .last > button {
+        width: 40%;
+        position: relative;
+        right: 5px;
+        margin: 20px 0;
+        z-index: 1;
+        height: 40x;
+    }
+
     #bg-pattern-how-we-work-desktop {
         display: none;
+    }
+
+    #bg-pattern-how-we-work-mobile {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 2;
     }
 }
 

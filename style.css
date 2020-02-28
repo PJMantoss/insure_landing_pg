@@ -361,6 +361,14 @@ header > .menu-icon {
     #pattern-intro-left-desktop {
         display: none;
     }
+    
+    #pattern-intro-left-mobile{
+        display: block;
+        position: absolute;
+        z-index: 1;
+        top: 450px;
+        left: 40px;
+    }
 
     #pattern-intro-right-desktop {
         display: none;

@@ -156,7 +156,7 @@ header > .menu-icon {
         position: absolute;
         top: 50px;
         left: 180px;
-        background: transparent;
+        background: hsl(256, 26%, 20%);
         border: 1px thin white;
         border-radius: 4px;
         min-width: 240px;
@@ -263,6 +263,12 @@ header > .menu-icon {
     height: 35px;
     width: 20%;
     text-transform: uppercase;
+}
+
+.intro-info > button:hover {
+    background-color: white;
+    color: hsl(270, 9%, 17%);
+    cursor: pointer;
 }
 
 #image-intro-desktop {

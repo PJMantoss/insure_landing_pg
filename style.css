@@ -214,7 +214,7 @@ header > .menu-icon {
     background-color: hsl(256, 26%, 20%);
     height: 82vh;
     position: relative;
-    z-index: -1;
+    z-index: 0;
     margin-bottom: 200px;
 }
 
@@ -269,6 +269,7 @@ header > .menu-icon {
     background-color: white;
     color: hsl(270, 9%, 17%);
     cursor: pointer;
+    font-weight: 600;
 }
 
 #image-intro-desktop {
@@ -495,7 +496,7 @@ header > .menu-icon {
     background-color: hsl(256, 26%, 20%);
     height: 33vh;
     position: relative;
-    z-index: -1;
+    z-index: 1;
     margin: 100px auto;
     width: 80%;
 }
@@ -503,7 +504,7 @@ header > .menu-icon {
 .last-div .last {
     display: flex;
     align-items: center;
-    z-index: 1;
+    z-index: 5;
 }
 
 .last > h2 {
@@ -534,6 +535,13 @@ header > .menu-icon {
     z-index: 2;
     position: absolute;
     right: 65px;
+}
+
+.last > button:hover{
+    background-color: white;
+    color: hsl(270, 9%, 17%);
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .last-div > #bg-pattern-how-we-work-desktop {
@@ -598,7 +606,7 @@ header > .menu-icon {
 footer {
     width: 100%;
     background-color: hsl(0, 0%, 98%);
-    z-index: -1;
+    z-index: 0;
     position: relative;
     height: 60%;
 }
@@ -609,7 +617,7 @@ footer > .footer-head {
     width: 80%;
     margin: auto;
     padding-top: 10px;
-    z-index: 0;
+    z-index: 2;
     position: absolute;
     top: 10px;
     left: 150px;
@@ -694,7 +702,7 @@ footer > hr {
     align-items: center;
     width: 80%;
     margin: 5px auto 50px auto;
-    z-index: 0;
+    z-index: 2;
     position: absolute;
     top: 160px;
     left: 150px;
@@ -732,7 +740,7 @@ footer > hr {
 
 footer > #bg-pattern-footer-desktop {
     position: absolute;
-    z-index: 3;
+    z-index: 1;
 }
 
 footer > #bg-pattern-footer-mobile{
